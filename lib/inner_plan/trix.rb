@@ -1,18 +1,8 @@
 require "inner_plan/trix/version"
-require "inner_plan/trix/railtie"
+require "inner_plan/trix/engine"
 
 module InnerPlan
   module Trix
-    module TaskPatch
-      def self.prepended(base)
-        base.has_rich_text :description
-      end
-    end
-
-    module DescriptionRendererPatch
-      def self.prepended(base)
-        base.step nil, delete: :apply_simple_format
-      end
-    end
+    # Your code goes here...
   end
 end
